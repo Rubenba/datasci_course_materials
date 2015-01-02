@@ -3,10 +3,12 @@ import urllib2 as urllib
 
 # See assignment1.html instructions or README for how to get these credentials
 
-api_key = "<Enter api key>"
-api_secret = "<Enter api secret>"
-access_token_key = "<Enter your access token key here>"
-access_token_secret = "<Enter your access token secret here>"
+api_key = "<IQWsv7hlrfsutKWNP9oc6bV3u>"
+api_secret = "<h26ACXQa3Fds0tvNPLaIUc48L3BP3h6e1dFvxMEj1fDcDurXQv>"
+access_token_key = "<793973412-EaWk4pg9BPsRK2FmMFwosN1I2iEk0ZK0RQI5fPQM>"
+access_token_secret = "<ZinGLKFR2aMLP6n4fPBtuPNWE9MhrQNkTg9SolnBHKnqg>"
+
+print("trying github")
 
 _debug = 0
 

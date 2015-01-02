@@ -1,14 +1,14 @@
 import oauth2 as oauth
-import urllib2 as urllib
+import urllib.request as urllib
+
+
 
 # See assignment1.html instructions or README for how to get these credentials
 
-api_key = "<IQWsv7hlrfsutKWNP9oc6bV3u>"
-api_secret = "<h26ACXQa3Fds0tvNPLaIUc48L3BP3h6e1dFvxMEj1fDcDurXQv>"
-access_token_key = "<793973412-EaWk4pg9BPsRK2FmMFwosN1I2iEk0ZK0RQI5fPQM>"
-access_token_secret = "<ZinGLKFR2aMLP6n4fPBtuPNWE9MhrQNkTg9SolnBHKnqg>"
-
-print("trying github")
+api_key = "IQWsv7hlrfsutKWNP9oc6bV3u"
+api_secret = "h26ACXQa3Fds0tvNPLaIUc48L3BP3h6e1dFvxMEj1fDcDurXQv"
+access_token_key = "793973412-EaWk4pg9BPsRK2FmMFwosN1I2iEk0ZK0RQI5fPQM"
+access_token_secret = "ZinGLKFR2aMLP6n4fPBtuPNWE9MhrQNkTg9SolnBHKnqg"
 
 _debug = 0
 
@@ -53,7 +53,7 @@ def twitterreq(url, method, parameters):
   return response
 
 def fetchsamples():
-  url = "https://stream.twitter.com/1/statuses/sample.json"
+  url = "https://api.twitter.com/1.1/search/tweets.json?q=microsoft"
   parameters = []
   response = twitterreq(url, "GET", parameters)
   for line in response:

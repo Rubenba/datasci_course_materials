@@ -68,7 +68,7 @@ if __name__ == '__main__':
 
 
 f = open('C:\\Users\\Ruben\\PycharmProjects\\datasci_course_materials\\assignment1\\outputtwitter.txt', 'r')
-outfile = open("C:\\Users\\Ruben\\PycharmProjects\\datasci_course_materials\\assignment1\\assign1prob0.txt","a") # open file for appending
+outfile = open("C:\\Users\\Ruben\\PycharmProjects\\datasci_course_materials\\assignment1\\assign1prob1.txt","a") # open file for appending
 
 for i in range(21):
   line = f.readline()
@@ -78,6 +78,31 @@ for i in range(21):
 f.close()
 outfile.close()
 
+
+def fetchmicrosoft():
+  url = "https://stream.twitter.com/1.1/statuses/sample.json?q=microsoft"
+  parameters = []
+  response = twitterreq(url, "GET", parameters)
+  f = open('outputmicrosoft.txt', 'w')
+
+  for line in response:
+    print >>f, line.strip()
+
+
+if __name__ == '__main__':
+  fetchmicrosoft()
+
+
+fmicrosoft = open('C:\\Users\\Ruben\\PycharmProjects\\datasci_course_materials\\assignment1\\outputmicrosoft.txt', 'r')
+outfilemicro = open("C:\\Users\\Ruben\\PycharmProjects\\datasci_course_materials\\assignment1\\assign1prob1micro.txt","a") # open file for appending
+
+for i in range(21):
+  line = fmicrosoft.readline()
+  outfilemicro.write(line)
+  print(line)
+
+fmicrosoft.close()
+outfilemicro.close()
 
 
 

@@ -65,3 +65,19 @@ def fetchsamples():
 if __name__ == '__main__':
   fetchsamples()
 
+
+
+f = open('C:\\Users\\Ruben\\PycharmProjects\\datasci_course_materials\\assignment1\\outputtwitter.txt', 'r')
+f.readline()
+
+tf = 'outputtwitter.txt'
+x = open('outputtwitter.txt', 'r')
+x.read()
+
+
+temp = open('outputtwitter.txt','r').readlines()
+
+temp.close()
+output_read = open('outputtwitter.txt','r')
+lines = output_read.readlines()
+

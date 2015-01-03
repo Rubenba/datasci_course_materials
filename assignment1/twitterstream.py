@@ -68,7 +68,19 @@ if __name__ == '__main__':
 
 
 f = open('C:\\Users\\Ruben\\PycharmProjects\\datasci_course_materials\\assignment1\\outputtwitter.txt', 'r')
-f.readline()
+outfile = open("C:\\Users\\Ruben\\PycharmProjects\\datasci_course_materials\\assignment1\\assign1prob0.txt","a") # open file for appending
+
+for i in range(21):
+  line = f.readline()
+  outfile.write(line)
+  print(line)
+
+f.close()
+outfile.close()
+
+
+
+
 
 tf = 'outputtwitter.txt'
 x = open('outputtwitter.txt', 'r')

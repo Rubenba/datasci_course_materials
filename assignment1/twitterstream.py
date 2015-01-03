@@ -93,7 +93,7 @@ if __name__ == '__main__':
   fetchmicrosoft()
 
 
-fmicrosoft = open('C:\\Users\\Ruben\\PycharmProjects\\datasci_course_materials\\assignment1\\outputmicrosoft.txt', 'r')
+fmicrosoft = open('C:\\Users\\Ruben\\PycharmProjects\\datasci_course_materials\\assignment1\\output2.txt', 'r')
 outfilemicro = open("C:\\Users\\Ruben\\PycharmProjects\\datasci_course_materials\\assignment1\\assign1prob1micro.txt","a") # open file for appending
 
 for i in range(21):

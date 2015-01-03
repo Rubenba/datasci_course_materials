@@ -56,11 +56,11 @@ def fetchsamples():
   url = "https://stream.twitter.com/1.1/statuses/sample.json"
   parameters = []
   response = twitterreq(url, "GET", parameters)
-  open('outputtwitter.txt', 'w')
-  to_file = open('outputtwitter.txt','w')
+  f = open('outputtwitter.txt', 'w')
+
   for line in response:
-    print line.strip()
-    to_file.write(line.strip())
+    print >>f, line.strip()
+
 
 if __name__ == '__main__':
   fetchsamples()

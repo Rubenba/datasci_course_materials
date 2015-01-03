@@ -86,7 +86,7 @@ def fetchmicrosoft():
   f = open('output2.txt', 'w')
 
   for line in response:
-    print >>fi, line.strip()
+    print >>f, line.strip()
 
 
 if __name__ == '__main__':

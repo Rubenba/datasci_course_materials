@@ -83,10 +83,10 @@ def fetchmicrosoft():
   url = "https://stream.twitter.com/1.1/statuses/sample.json?q=microsoft"
   parameters = []
   response = twitterreq(url, "GET", parameters)
-  f = open('outputmicrosoft.txt', 'w')
+  f = open('output2.txt', 'w')
 
   for line in response:
-    print >>f, line.strip()
+    print >>fi, line.strip()
 
 
 if __name__ == '__main__':
@@ -103,19 +103,4 @@ for i in range(21):
 
 fmicrosoft.close()
 outfilemicro.close()
-
-
-
-
-
-tf = 'outputtwitter.txt'
-x = open('outputtwitter.txt', 'r')
-x.read()
-
-
-temp = open('outputtwitter.txt','r').readlines()
-
-temp.close()
-output_read = open('outputtwitter.txt','r')
-lines = output_read.readlines()
 

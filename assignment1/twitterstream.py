@@ -80,7 +80,7 @@ outfile.close()
 
 
 def fetchmicrosoft():
-  url = "https://stream.twitter.com/1.1/statuses/sample.json?q=microsoft"
+  url = "https://stream.twitter.com/1.1/statuses/filter.json?track=microsoft"
   parameters = []
   response = twitterreq(url, "GET", parameters)
   f = open('output2.txt', 'w')

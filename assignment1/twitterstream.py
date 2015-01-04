@@ -80,13 +80,13 @@ outfile.close()
 
 
 def fetchmicrosoft():
-  url = "https://api.twitter.com/1.1/search/tweets.json?q=microsoft"
+  url = "https://stream.twitter.com/1/statuses/sample.json?q=microsoft" #"https://api.twitter.com/1.1/search/tweets.json?q=microsoft"
   parameters = []
   response = twitterreq(url, "GET", parameters)
-  f = open('output2.txt', 'w')
+  fi = open('output2.txt', 'w')
 
   for line in response:
-    print >>f, line.strip()
+    print >>fi, line.strip()
 
 
 if __name__ == '__main__':
